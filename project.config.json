@@ -8,9 +8,11 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.6",
+	"libVersion": "2.5.0",
 	"appid": "wx5beed396e0cd4f45",
 	"projectname": "happy_life",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
