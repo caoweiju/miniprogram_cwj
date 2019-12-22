@@ -1,14 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "custom": true,
@@ -37,5 +37,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

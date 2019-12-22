@@ -1,15 +1,71 @@
 <!--index.wxml-->
 <view class="container">
   <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-      <swiper indicator-dots="{{indicatorDots}}"
+    <view class="page-swiper">
+      <swiper class="page-swipercont" indicator-dots="{{indicatorDots}}" indicator-color="rgba(255, 255, 255, .3)"
+        indicator-active-color="#fff"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}" wx:key="*this">
+        <block wx:for="{{headerBanner}}" wx:key="url">
           <swiper-item>
-            <view class="swiper-item {{item}}"></view>
+            <view class="page-swiper-item">
+              <image class="page-swiper-itemimg" src="{{item.img}}" mode="aspectFill"></image>
+            </view>
           </swiper-item>
         </block>
       </swiper>
+    </view>
+    <view class="page-block">
+      <view class="page-blockwrap">
+        <block wx:for="{{blocks}}" wx:key="url">
+          <view class="page-block-item">
+            <image class="page-block-itemimg" src="{{item.img}}" mode="aspectFill"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="page-entry">
+      <view class="page-entrywrap">
+        <block wx:for="{{headerEntry}}" wx:key="url">
+          <view class="page-entry-item">
+            <image class="page-entry-itemimg" src="{{item.img}}" mode="aspectFill"></image>
+            <text class="page-entry-itemtxt">{{item.txt}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="page-ads">
+      <view class="page-adswrap">
+        <view class="page-ads-tit">
+          <text class="page-ads-tittxt">更多有趣的内容</text>
+        </view>
+        <view class="page-ads-conts">
+          <view class="page-ads-cont">
+            <image class="page-ads-itemimg" src="https://dimg03.c-ctrip.com/images/10020q000000gajaeDB6E_C_360_202.jpg" mode="aspectFill"></image>
+            <text class="page-ads-itemtxt">好的不错的内容好的不错的内容好的不错的内容好的不错的内容好的不错的内容</text>
+          </view>
+          <view class="page-ads-contlf">
+            <view class="page-ads-contlftop">
+              <view class="page-ads-itemlftoptxts">
+                <text class="page-ads-itemlftoptxt">好的不错的内容</text>
+                <text class="page-ads-itemlftoptxt">好的不错</text>
+              </view>
+              <image class="page-ads-itemlftopimg" src="https://pic.c-ctrip.com/platform/h5/home/pic-tmh-04.png" mode="aspectFill"></image>
+            </view>
+            <view class="page-ads-contlfbots">
+              <view class="page-ads-contlfbot">
+                <text class="page-ads-itemlfbottit">好的不错的</text>
+                <text class="page-ads-itemlfbottxt">可以的</text>
+                <image class="page-ads-itemlfbotimg" src="https://pic.c-ctrip.com/platform/h5/home/pic-tmh-04.png" mode="aspectFill"></image>
+              </view>
+              <view class="page-ads-contlfbot">
+                <text class="page-ads-itemlfbottit">好的不错的</text>
+                <text class="page-ads-itemlfbottxt">这个我需要</text>
+                <image class="page-ads-itemlfbotimg" src="https://pic.c-ctrip.com/platform/h5/home/pic-tmh-04.png" mode="aspectFill"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
