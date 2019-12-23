@@ -24,6 +24,9 @@
       </view>
     </view>
     <view class="page-entry">
+      <view class="page-entry-tit">
+        <text class="page-entry-tittxt">更多有趣的内容</text>
+      </view>
       <view class="page-entrywrap">
         <block wx:for="{{headerEntry}}" wx:key="url">
           <view class="page-entry-item">
@@ -41,7 +44,7 @@
         <view class="page-ads-conts">
           <view class="page-ads-cont">
             <image class="page-ads-itemimg" src="https://dimg03.c-ctrip.com/images/10020q000000gajaeDB6E_C_360_202.jpg" mode="aspectFill"></image>
-            <text class="page-ads-itemtxt">好的不错的内容好的不错的内容好的不错的内容好的不错的内容好的不错的内容</text>
+            <text class="page-ads-itemtxt">好的不错的内容好的不错的好的不错的内容好的不错的内容好的不错的内容好的不错的内容好的不错的内容</text>
           </view>
           <view class="page-ads-contlf">
             <view class="page-ads-contlftop">

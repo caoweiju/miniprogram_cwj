@@ -54,6 +54,14 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+.page-entry-tit{
+  margin-bottom: 10px;
+}
+.page-entry-tittxt{
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
 .page-entrywrap{
   display: flex;
   align-items: center;
@@ -91,12 +99,12 @@
 }
 .page-ads-tit{
   padding: 0 24rpx;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .page-ads-tittxt{
   font-size: 18px;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
 }
 .page-ads-conts{
   width: 100%;
